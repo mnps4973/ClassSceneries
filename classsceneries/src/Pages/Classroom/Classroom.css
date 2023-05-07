@@ -1,0 +1,48 @@
+.classroom{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.activity{
+    position: absolute;
+    background-color: var(--purple);
+    height: 30px;
+    width: 30px;
+    border-radius: 999px;
+}
+
+.activity:hover{
+    background-color: var(--lavender);
+}
+
+.activity{
+    left: 52vw;
+    top: 40vh;
+}
+
+.chalkboard{
+    color: var(--purple);
+    height:30px;
+    width:30px;
+
+    position:absolute;
+    left: 1vw;
+    top: 3vh;
+}
+.chalkboard:hover{
+    color: var(--purple);
+}
+
+.profile{
+    color: var(--lavender);
+    height:30px;
+    width:30px;
+
+    position:absolute;
+    left: 1vw;
+    top: 10vh;
+}
+.profile:hover{
+    color: var(--purple);
+}
