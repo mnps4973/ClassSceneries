@@ -16,9 +16,36 @@
     background-color: var(--lavender);
 }
 
-.activity{
+.activity-1{
     left: 52vw;
     top: 40vh;
+}
+.activity-2{
+    right: 5vw;
+    top: 50vh;
+}
+.activity-3{
+    bottom: 10vh;
+}
+.activity-4{
+    left: 25vw;
+    bottom: 25vh;
+}
+.activity-5{
+    right: 10vw;
+    bottom: 10vh;
+}
+.activity-6{
+    right: 20vw;
+    bottom: 25vh;
+}
+.activity-7{
+    left: 52vw;
+    bottom: 40vh;
+}
+.activity-8{
+    right: 15vw;
+    top: 45vh;
 }
 
 .chalkboard{
