@@ -8,7 +8,7 @@ export default function Classroom(){
         <div className="classroom min-vh-100 bg-image" style={{backgroundImage:`url(${classroom})`}}>
             <a className="btn"><FaChalkboardTeacher className="chalkboard"/></a>
             <a className="btn"><FaUserCircle className="profile"/></a>
-            <a className="activity activity-1 btn" href="/classroom" alt="Start a class" title="Start a class"></a>
+            <a className="activity activity-1 btn" href="/classroom/activity1" alt="Start a class" title="Start a class"></a>
             <a className="activity activity-2 btn" href="/classroom" alt="Safety in the classroom" title="Safety in the classroom"></a>
             <a className="activity activity-3 btn" href="/classroom" alt="Group activities" title="Group activities"></a>
             <a className="activity activity-4 btn" href="/classroom" alt="Individual work" title="Individual work"></a>
