@@ -46,6 +46,7 @@
     color: var(--dark-purple);
 }
 
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -67,3 +68,4 @@
 .grid-item:hover{
     background-color: var(--purple);
 }
+

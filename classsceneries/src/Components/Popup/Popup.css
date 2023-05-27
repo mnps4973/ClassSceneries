@@ -1,0 +1,27 @@
+.popup{
+    background-color: var(--dark-purple);
+    opacity: 0.9;
+    width: 50%;
+    height: 75vh;
+    
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    display: none;
+
+    text-align: center;
+}
+
+.popupClose{
+    color: var(--lavender);
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding: 2px;
+}
+
+.popupText{
+    padding: 1rem;
+    color: var(--lavender);
+    font-size: 30px;
+}
