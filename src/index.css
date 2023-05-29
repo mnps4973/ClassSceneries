@@ -10,6 +10,9 @@ body {
   --lavender_opacity: rgb(239, 221, 245, 0.5);
   --purple: #9800C5;
   --dark-purple: #540E55;
+
+  --correct: #47FF70;
+  --wrong: #FF5D47;
 }
 
 code {

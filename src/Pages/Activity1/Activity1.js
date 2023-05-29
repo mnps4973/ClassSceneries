@@ -58,14 +58,19 @@ export default function Activity1(){
     };
 
     return(
-        <div className="classroom min-vh-100 bg-image" style={{backgroundImage:`url(${classroom})`}}>
-            <a className="btn" href="/classroom"><FaArrowAltCircleLeft className="chalkboard"/></a>
-            <a className="btn"><FaUserCircle className="profile"/></a>
+        <>
+        <div className="classroom_activity min-vh-100 bg-image" style={{backgroundImage:`url(${classroom})`}}> </div>
+        <div className="boo">
+            <a className="btn chalkboardbtn" href="/classroom"><FaArrowAltCircleLeft className="chalkboard"/></a>
+            <a className="btn profilebtn"><FaUserCircle className="profile"/></a>
+            <a className="btn soundbtn"><FaVolumeUp className="sound"/></a>
+            <p id="points1" className="points">Points: {points}</p>
+
             <div className="activity1-explanation">
                 <div className="activity1-question">
                     <h1>This is the beginning of the class when everyone is still coming.</h1>
                     <h1>How would you start the class?</h1>
-                    <h1>Choose the most suitable options to start the day</h1>
+                    <h1>Choose the three most suitable options to start the day</h1>
                 </div>
 
                 <Popup data={data1} />
@@ -89,12 +94,9 @@ export default function Activity1(){
                     <a className="btn grid-item" id="8"><p>“Hi, Laura! You look very nice today!”</p></a>
                     <a className="btn grid-item" id="9"><p>“Hello, Laura! How is your day going?”</p></a>
                 </div>
-                
-                
-                <a className="btn"><FaVolumeUp className="sound"/></a>
-                <p id="points1" className="points">Points: {points}</p>
             </div>          
         </div>
+        </>
     );
 
 }
@@ -104,10 +106,10 @@ function showPop(id){
     if(!(clicked.find(element => element == id))) {
         if((id == 1 || id == 3 || id == 5 || id == 6 || id == 7 || id == 8)){
             if (points > min_points) points -= 1;
-            if(document.getElementById(id_str)) document.getElementById(id_str).style.backgroundColor = 'red';
+            if(document.getElementById(id_str)) document.getElementById(id_str).style.backgroundColor = 'var(--wrong)';
         } else if (id == 2 || id == 4 || id == 9){
             points += 2;    
-            if(document.getElementById(id_str)) document.getElementById(id_str).style.backgroundColor = 'green';
+            if(document.getElementById(id_str)) document.getElementById(id_str).style.backgroundColor = 'var(--correct)';
         }
         clicked.push(id);
     }

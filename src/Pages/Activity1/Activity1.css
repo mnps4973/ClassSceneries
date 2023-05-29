@@ -1,56 +1,63 @@
-.classroom{
+.classroom_activity{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
+.chalkboardbtn{
+    position:absolute;
+    left: 0.1vw;
+    top: 0.1vh;
+}
 .chalkboard{
     color: var(--purple);
     height:30px;
     width:30px;
-
-    position:absolute;
-    left: 1vw;
-    top: 3vh;
 }
 .chalkboard:hover{
     color: var(--purple);
 }
 
+.profilebtn{
+    position:absolute;
+    left: 0.1vw;
+    top: 1vh;
+}
 .profile{
     color: var(--lavender);
     height:30px;
     width:30px;
-
-    position:absolute;
-    left: 1vw;
-    top: 10vh;
 }
 .profile:hover{
     color: var(--purple);
 }
 
+.soundbtn{
+    position: absolute;
+    left:0.1vw;
+    bottom:0.3vh;
+}
 .sound{
     color: var(--purple);
     height:30px;
     width:30px;
-
-    position: absolute;
-    left:1vw;
-    bottom:3vh;
 }
 
 .activity1-explanation{
-    float: right;
     text-align: center;
     color: var(--dark-purple);
-}
+    min-width: 75vw;
+    max-height:100vh;
 
-.activity1-question{
-    background-color: var(--lavender_opacity);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    
+    z-index: 2;
 }
-
 
 .grid-container{
     display: grid;
@@ -76,8 +83,8 @@
 
 .points{
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    top: 0.1vh;
+    right: 0.5vw;
 
     padding: 5px;
     border-radius: 999px;

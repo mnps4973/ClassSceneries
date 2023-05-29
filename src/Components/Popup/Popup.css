@@ -1,7 +1,7 @@
 .popup{
     background-color: var(--dark-purple);
     opacity: 0.9;
-    width: 50%;
+    width: 75%;
     height: 75vh;
     
     position: absolute;
