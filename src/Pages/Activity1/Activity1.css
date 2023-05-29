@@ -2,6 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .chalkboard{
@@ -46,6 +47,10 @@
     color: var(--dark-purple);
 }
 
+.activity1-question{
+    background-color: var(--lavender_opacity);
+}
+
 
 .grid-container{
     display: grid;
@@ -67,5 +72,17 @@
 }
 .grid-item:hover{
     background-color: var(--purple);
+}
+
+.points{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+    padding: 5px;
+    border-radius: 999px;
+
+    color: var(--dark-purple);
+    background-color: var(--lavender);
 }
 

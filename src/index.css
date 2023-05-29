@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   --lavender: #EFDDF5;
+  --lavender_opacity: rgb(239, 221, 245, 0.5);
   --purple: #9800C5;
   --dark-purple: #540E55;
 }
