@@ -9,49 +9,59 @@ var points = 0;
 var clicked = [];
 
 const min_points = 0;
+const act = 1;
 
 export default function Activity1(){
     const data1 = {
+        activity: act,
         id: '1',
         type: 'Wrong!',
         text: 'Feel free to start connecting with students even if everyone hasn\'t arrived yet. This is a great chance for tutors to gain a deeper understanding of their students.',  
     };
     const data2 = {
+        activity: act,
         id: '2',
         type: 'Right!',
         text: 'When students enter the classroom, they are transitioning from a different environment and may not be fully focused on their studies. To help them adjust, it is recommended to start the class with a brief, familiar activity known as a ritual. This playful activity can be changed from time to time, but it should have simple rules that are easy to understand. Additionally, the ritual can be related to the skills and habits students should practice during their studies.',
     };
     const data3 = {
+        activity: act,
         id: '3',
         type: 'Wrong!',
         text: 'Starting a class by discussing anything related to the learning process is highly discouraged. This can exacerbate anxiety in students who require ample time to adapt to their studies.',
     };
     const data4 = {
+        activity: act,
         id: '4',
         type: 'Right!',
         text: 'While waiting for everyone to arrive, use this opportunity to engage with students and ensure their well-being. Establishing trust and maintaining a strong relationship is crucial in your role as a tutor. Make sure to take advantage of this time to build rapport and foster a positive learning environment.',
     };
     const data5 = {
+        activity: act,
         id: '5',
         type: 'Wrong!',
         text: 'Although homework is an essential component of the class, it can be overwhelming for students to immerse themselves in their studies right after class.',
     };
     const data6 = {
+        activity: act,
         id: '6',
         type: 'Wrong!',
         text: 'It is advisable to provide students with enough time to adjust to the new environment.',
     };
     const data7 = {
+        activity: act,
         id: '7',
         type: 'Wrong!',
         text: 'It\'s not recommended to begin a class by talking about tests or anything related to the learning process. This can increase anxiety in students who need time to adjust to their studies. Testing is already stressful enough, so it\'s important to consider the timing and approach when announcing them.',
     };
     const data8 = {
+        activity: act,
         id: '8',
         type: 'Wrong!',
         text: 'Focusing too much on appearance can lead students to form incorrect beliefs about the importance of their looks, and may even cause some to feel insecure. Therefore, during class, it is important for tutors to maintain a friendly yet professional demeanor and concentrate on topics related to learning.',
     };
     const data9 = {
+        activity: act,
         id: '9',
         type: 'Right!',
         text: 'To provide effective feedback, teachers should address students by name and specify their behavior. Instead of giving generic feedback like \"Don\'t touch him,\" teachers should acknowledge the student\'s positive actions, like \"Great job keeping your hands to yourself, Laura!\"',
@@ -60,7 +70,7 @@ export default function Activity1(){
     return(
         <>
         <div className="classroom_activity min-vh-100 bg-image" style={{backgroundImage:`url(${classroom})`}}> </div>
-        <div className="boo">
+        <div>
             <a className="btn chalkboardbtn" href="/classroom"><FaArrowAltCircleLeft className="chalkboard"/></a>
             <a className="btn profilebtn"><FaUserCircle className="profile"/></a>
             <a className="btn soundbtn"><FaVolumeUp className="sound"/></a>
@@ -114,7 +124,7 @@ function showPop(id){
         clicked.push(id);
     }
 
-    const show = 'pop' + id;
+    const show = 'pop' + act + id;
     document.getElementById(show).style.display = 'block';
 
     

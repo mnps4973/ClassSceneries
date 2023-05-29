@@ -9,6 +9,9 @@ import './App.css';
 import Classroom from "../../Pages/Classroom/Classroom";
 import Welcome from "../../Pages/Welcome/Welcome";
 import Activity1 from "../../Pages/Activity1/Activity1";
+import Activity4 from "../../Pages/Activity4/Activity4";
+
+// <Route path="/classroom/activity4" exact element={<Activity4/>} />
 
 function App() {
 

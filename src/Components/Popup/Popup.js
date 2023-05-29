@@ -11,8 +11,8 @@ import React from 'react';
 import {FaRegWindowClose} from 'react-icons/fa';
 
 export default function Popup({data}){
-    const id = 'pop' + data.id;
-    const closeid = 'close' + data.id;
+    const id = 'pop' + data.activity + data.id;
+    const closeid = 'close' + data.activity + data.id;
     setTimeout(function(){
         document.getElementById(closeid).addEventListener('click', function(){
             document.getElementById(id).style.display = 'none';
