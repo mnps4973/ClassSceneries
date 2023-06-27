@@ -1,5 +1,7 @@
 import classroom from '../../assets/classroom.png';
-//import './Activity4.css';
+// import './Activity4.css';
+
+import Popup from '../../Components/Popup/Popup';
 
 import TrueFalse from '../../Components/TrueFalse/TrueFalse';
 import { FaUserCircle, FaArrowAltCircleLeft, FaVolumeUp } from 'react-icons/fa';
@@ -61,6 +63,47 @@ export default function Activity4(){
         explanation: 'It is recommended that tutors refrain from walking around the classroom while students are working, as it can lead to several negative outcomes. These include causing distractions, invading personal space, disrupting independent work, increasing dependency, inhibiting creativity and exploration, creating unequal attention distribution, and disrupting student interactions.',
     };
 
+    const popdata1 = {
+        activity: act,
+        id: 1,
+        type: '',
+        text: data1.explanation,
+    };
+
+    const popdata2 = {
+        activity: act,
+        id: 2,
+        type: '',
+        text: data2.explanation,
+    };
+
+    const popdata3 = {
+        activity: act,
+        id: 3,
+        type: '',
+        text: data3.explanation,
+    };
+
+    const popdata4 = {
+        activity: act,
+        id: 4,
+        type: '',
+        text: data4.explanation,
+    };
+
+    const popdata5 = {
+        activity: act,
+        id: 5,
+        type: '',
+        text: data5.explanation,
+    };
+
+    const popdata6 = {
+        activity: act,
+        id: 6,
+        type: '',
+        text: data6.explanation,
+    };
 
 
     return(
@@ -78,6 +121,13 @@ export default function Activity4(){
                 <TrueFalse data={data4}></TrueFalse>
                 <TrueFalse data={data5}></TrueFalse>
                 <TrueFalse data={data6}></TrueFalse>
+
+                <Popup data={popdata1}></Popup>
+                <Popup data={popdata2}></Popup>
+                <Popup data={popdata3}></Popup>
+                <Popup data={popdata4}></Popup>
+                <Popup data={popdata5}></Popup>
+                <Popup data={popdata6}></Popup>
 
             </div>
         </>
@@ -116,56 +166,3 @@ setInterval(function(){
     }
     
 }, 3000);
-
-
-
-export function showPopAgree(id, act){
-    const pop_id = 'pop' + act + id;
-    document.getElementById(pop_id).style.display = 'block';
-
-    switch(id){
-        case 1:
-            if(points > min_points) points -= 1;
-            break;
-        case 2:
-            if(points > min_points) points -= 1;
-            break;
-        case 3:
-            if(points > min_points) points -= 1;
-            break;
-        case 4:
-            points += 2;
-            break;
-        case 5:
-            points += 2;
-            break;
-        case 6:
-            points += 2;
-            break;
-    };
-}
-
-export function showPopDisagree(id, act){
-    const pop_id = 'pop' + act + id;
-    document.getElementById(pop_id).style.display = 'block';
-    switch(id){
-        case 1:
-            points += 2;
-            break;
-        case 2:
-            points += 2;
-            break;
-        case 3:
-            points += 2;
-            break;
-        case 4:
-            if(points > min_points) points -= 1;
-            break;
-        case 5:
-            if(points > min_points) points -= 1;
-            break;
-        case 6:
-            if(points > min_points) points -= 1;
-            break;
-    };
-}

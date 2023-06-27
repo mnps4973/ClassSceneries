@@ -1,14 +1,22 @@
 .popup{
     background-color: var(--dark-purple);
     opacity: 0.9;
-    width: 75%;
+    width: 75vw;
     height: fit-content;
     
-    position: absolute;
-    right: 15%;
-    top: 20%;
     display: none;
 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 4;
+    
     text-align: center;
 }
 

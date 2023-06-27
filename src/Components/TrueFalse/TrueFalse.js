@@ -1,19 +1,20 @@
-import showPopAgree from '../../Pages/Activity4/Activity4.js';
-import showPopDisagree from '../../Pages/Activity4/Activity4.js';
-
-import Popup from '../Popup/Popup';
 import './TrueFalse.css';
+
+function showPopAgree(id, act){
+    const pop_id = 'pop' + act + id;
+    document.getElementById(pop_id).style.display = 'block';
+}
+
+function showPopDisagree(id, act){
+    const pop_id = 'pop' + act + id;
+    document.getElementById(pop_id).style.display = 'block';
+}
 
 export default function TrueFalse({data}){
     const id_str = "tf" + data.activity + data.id;
     const agree_id = "agree" + data.activity + data.id;
     const disagree_id = "disagree" + data.activity + data.id;
-    const popdata = {
-        activity: data.activity,
-        id: data.id,
-        type: null,
-        text: data.explanation,
-    };
+    
     setTimeout(function(){
         if(document.getElementById('tf41')){
             document.getElementById('tf41').style.display = 'block';
@@ -39,12 +40,11 @@ export default function TrueFalse({data}){
                     <a id={agree_id} className="btn truefalsebtn true">AGREE</a>
                     <a id={disagree_id} className="btn truefalsebtn false">DISAGREE</a>
                 </div>
-                <Popup data={popdata}></Popup>
+                
             </div>
         </>
     );
 }
-
 
 
 
